@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Emma's Flowers | Assortment</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Inter&family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="layoutWrapper">
+      <header class="contentWrapper">
+        <a href="./index.html"><h1>Emma's Flowers</h1></a>
+        <nav>
+          <div class="navItems hideNavItems" id="navItems">
+            <a href="./index.html">Home</a>
+            <a href="./assortment.html" class="selected">Assortment</a>
+            <a href="./about.html">About us</a>
+            <a href="./contact.html">Contact</a>
+          </div>
+          <button onclick="toggleNavBar()" class="toggleNavBar">
+            <img
+              src="./images/menu.svg"
+              alt="Open menu icon"
+              class="toggleNavBarIcon"
+              id="toggleNavBarIcon"
+            />
+          </button>
+        </nav>
+      </header>
+      <main class="contentWrapper">
+        <div class="assortment">
+          <div class="showcase">
+            <div>
+              <img src="./images/s1.jpg" alt="The bouquet 'Whimsical Medley'" />
+              <span>Whimsical Medley</span>
+            </div>
+            <div>
+              <img src="./images/s2.jpg" alt="The bouquet 'Spring Splendor'" />
+              <span>Spring Splendor</span>
+            </div>
+            <div>
+              <img
+                src="./images/s3.jpg"
+                alt="The bouquet 'Elegance in Bloom'"
+              />
+              <span>Elegance in Bloom</span>
+            </div>
+            <div>
+              <img
+                src="./images/s4.jpg"
+                alt="The bouquet 'Vintage Floral Arrangement'"
+              />
+              <span>Vintage Floral Arrangement</span>
+            </div>
+            <div>
+              <img src="./images/s5.jpg" alt="The bouquet 'Blissful Blooms'" />
+              <span>Blissful Blooms</span>
+            </div>
+            <div>
+              <img src="./images/s6.jpg" alt="The bouquet 'Sunset Serenade'" />
+              <span>Sunset Serenade</span>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <div class="footerWrapper">
+      <footer class="contentWrapper">
+        <div class="footerNav">
+          <a href="./index.html" class="footerName">Emma's Flowers</a>
+          <div class="footerLinks">
+            <a href="./index.html">Home</a>
+            <a href="./assortment.html">Assortment</a>
+            <a href="./about.html">About us</a>
+            <a href="./contact.html">Contact</a>
+          </div>
+        </div>
+        <div class="footerInfo">
+          <div class="footerSplit">
+            <div class="footerTimes">
+              <span>Monday - Friday: 9:00 AM - 6:00 PM</span>
+              <span>Saturday: 10:00AM - 4:00 PM</span>
+              <span>Sunday: Closed</span>
+            </div>
+            <div class="footerContact">
+              <a href="tel:+442012345678">+44 (0)20 1234 5678</a>
+              <a href="mailto:hello@emmasflowers.co.uk"
+                >hello@emmasflowers.co.uk</a
+              >
+            </div>
+          </div>
+          <div class="footerAddress">
+            <span>123 Floral Street</span>
+            <span>Covent Garden</span>
+            <span>London, WC2E 9XY</span>
+            <span>United Kingdom</span>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Emma's Flowers | Contact</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Inter&family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="layoutWrapper">
+      <header class="contentWrapper">
+        <a href="./index.html"><h1>Emma's Flowers</h1></a>
+        <nav>
+          <div class="navItems hideNavItems" id="navItems">
+            <a href="./index.html">Home</a>
+            <a href="./assortment.html">Assortment</a>
+            <a href="./about.html">About us</a>
+            <a href="./contact.html" class="selected">Contact</a>
+          </div>
+          <button onclick="toggleNavBar()" class="toggleNavBar">
+            <img
+              src="./images/menu.svg"
+              alt="Open menu icon"
+              class="toggleNavBarIcon"
+              id="toggleNavBarIcon"
+            />
+          </button>
+        </nav>
+      </header>
+      <main class="contentWrapper">
+        <div class="contact">
+          <div class="details">
+            <div>
+              <h2>Contact us</h2>
+              <span>
+                <a href="tel:+442012345678">+44 (0)20 1234 5678</a>
+              </span>
+              <span>
+                <a href="mailto:hello@emmasflowers.co.uk"
+                  >hello@emmasflowers.co.uk</a
+                >
+              </span>
+            </div>
+            <div>
+              <h2>Come visit us</h2>
+              <span>123 Floral Street</span>
+              <span>Covent Garden</span>
+              <span>London, WC2E 9XY</span>
+              <span>United Kingdom</span>
+            </div>
+            <div>
+              <h2>Opening hours</h2>
+              <table>
+                <tr>
+                  <td>Monday</td>
+                  <td>9 AM</td>
+                  <td>-</td>
+                  <td>6PM</td>
+                </tr>
+                <tr>
+                  <td>Tuesday</td>
+                  <td>9 AM</td>
+                  <td>-</td>
+                  <td>6PM</td>
+                </tr>
+                <tr>
+                  <td>Wednesday</td>
+                  <td>9 AM</td>
+                  <td>-</td>
+                  <td>6PM</td>
+                </tr>
+                <tr>
+                  <td>Thursday</td>
+                  <td>9 AM</td>
+                  <td>-</td>
+                  <td>6PM</td>
+                </tr>
+                <tr>
+                  <td>Friday</td>
+                  <td>9 AM</td>
+                  <td>-</td>
+                  <td>6PM</td>
+                </tr>
+                <tr>
+                  <td>Saturday</td>
+                  <td>10 AM</td>
+                  <td>-</td>
+                  <td>4PM</td>
+                </tr>
+                <tr>
+                  <td>Sunday</td>
+                  <td colspan="3">Closed</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+
+          <div class="map">
+            <div class="mapContainer">
+              <iframe
+                src="https://www.openstreetmap.org/export/embed.html?bbox=-0.12681484222412112%2C51.51113463768397%2C-0.12381345033645631%2C51.51325627671818&amp;layer=mapnik&amp;marker=51.512195469552445%2C-0.1253141462802887"
+                style="border: 1px solid black"
+              ></iframe>
+            </div>
+            <a
+              href="https://www.openstreetmap.org/?mlat=51.51220&amp;mlon=-0.12531#map=19/51.51220/-0.12531&amp;layers=N"
+              >View Larger Map</a
+            >
+          </div>
+        </div>
+      </main>
+    </div>
+    <div class="footerWrapper">
+      <footer class="contentWrapper">
+        <div class="footerNav">
+          <a href="./index.html" class="footerName">Emma's Flowers</a>
+          <div class="footerLinks">
+            <a href="./index.html">Home</a>
+            <a href="./assortment.html">Assortment</a>
+            <a href="./about.html">About us</a>
+            <a href="./contact.html">Contact</a>
+          </div>
+        </div>
+        <div class="footerInfo">
+          <div class="footerSplit">
+            <div class="footerTimes">
+              <span>Monday - Friday: 9:00 AM - 6:00 PM</span>
+              <span>Saturday: 10:00AM - 4:00 PM</span>
+              <span>Sunday: Closed</span>
+            </div>
+            <div class="footerContact">
+              <a href="tel:+442012345678">+44 (0)20 1234 5678</a>
+              <a href="mailto:hello@emmasflowers.co.uk"
+                >hello@emmasflowers.co.uk</a
+              >
+            </div>
+          </div>
+          <div class="footerAddress">
+            <span>123 Floral Street</span>
+            <span>Covent Garden</span>
+            <span>London, WC2E 9XY</span>
+            <span>United Kingdom</span>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

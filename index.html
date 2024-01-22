@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Emma's Flowers</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Inter&family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="layoutWrapper">
+      <header class="contentWrapper">
+        <a href="./index.html"><h1>Emma's Flowers</h1></a>
+        <nav>
+          <div class="navItems hideNavItems" id="navItems">
+            <a href="./index.html" class="selected">Home</a>
+            <a href="./assortment.html">Assortment</a>
+            <a href="./about.html">About us</a>
+            <a href="./contact.html">Contact</a>
+          </div>
+          <button onclick="toggleNavBar()" class="toggleNavBar">
+            <img
+              src="./images/menu.svg"
+              alt="Open menu icon"
+              class="toggleNavBarIcon"
+              id="toggleNavBarIcon"
+            />
+          </button>
+        </nav>
+      </header>
+      <main class="contentWrapper">
+        <div class="home">
+          <div class="text">
+            <h2>Welcome to Emma's Flowers</h2>
+            <p>
+              Explore the beauty of nature at Emma's Flowers. Our handpicked
+              blooms and elegant arrangements are designed to bring joy to your
+              special moments. Whether it's a celebration or an everyday treat,
+              let our flowers enchant you.
+            </p>
+            <div class="ctaButtons">
+              <a href="./assortment.html" class="cta">Our assortments</a>
+              <a href="./contact.html" class="ctaSecondary">Come visit us</a>
+            </div>
+          </div>
+          <div class="imageWrapper">
+            <img src="./images/home.png" alt="A hand holding out a bouquet" />
+          </div>
+        </div>
+      </main>
+    </div>
+    <div class="footerWrapper">
+      <footer class="contentWrapper">
+        <div class="footerNav">
+          <a href="./index.html" class="footerName">Emma's Flowers</a>
+          <div class="footerLinks">
+            <a href="./index.html">Home</a>
+            <a href="./assortment.html">Assortment</a>
+            <a href="./about.html">About us</a>
+            <a href="./contact.html">Contact</a>
+          </div>
+        </div>
+        <div class="footerInfo">
+          <div class="footerSplit">
+            <div class="footerTimes">
+              <span>Monday - Friday: 9:00 AM - 6:00 PM</span>
+              <span>Saturday: 10:00AM - 4:00 PM</span>
+              <span>Sunday: Closed</span>
+            </div>
+            <div class="footerContact">
+              <a href="tel:+442012345678">+44 (0)20 1234 5678</a>
+              <a href="mailto:hello@emmasflowers.co.uk"
+                >hello@emmasflowers.co.uk</a
+              >
+            </div>
+          </div>
+          <div class="footerAddress">
+            <span>123 Floral Street</span>
+            <span>Covent Garden</span>
+            <span>London, WC2E 9XY</span>
+            <span>United Kingdom</span>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

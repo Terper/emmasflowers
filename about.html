@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Emma's Flowers | About us</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Inter&family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="layoutWrapper">
+      <header class="contentWrapper">
+        <a href="./index.html"><h1>Emma's Flowers</h1></a>
+        <nav>
+          <div class="navItems hideNavItems" id="navItems">
+            <a href="./index.html">Home</a>
+            <a href="./assortment.html">Assortment</a>
+            <a href="./about.html" class="selected">About us</a>
+            <a href="./contact.html">Contact</a>
+          </div>
+          <button onclick="toggleNavBar()" class="toggleNavBar">
+            <img
+              src="./images/menu.svg"
+              alt="Open menu icon"
+              class="toggleNavBarIcon"
+              id="toggleNavBarIcon"
+            />
+          </button>
+        </nav>
+      </header>
+      <main class="contentWrapper">
+        <div class="about">
+          <div class="text">
+            <h2>Discover the Beauty of Nature in Every Petal</h2>
+            <p>
+              Welcome to Emma's Flowers, where nature's artistry comes to life
+              in every bloom. We invite you to explore our world of exquisite
+              flowers and heartfelt arrangements, meticulously crafted to bring
+              joy and elegance to every occasion.
+            </p>
+            <p>
+              At Emma's Flowers, we believe in the simple yet profound magic of
+              flowers. Our passion for blossoms drives us to curate the most
+              enchanting and vibrant floral collection, each petal handpicked to
+              convey your emotions and sentiments.
+            </p>
+            <p>
+              Step into a realm where the fragrance of fresh blooms dances in
+              harmony with nature's beauty. Whether you're celebrating a special
+              moment or simply seeking the beauty of the everyday, our floral
+              creations will leave an indelible mark.
+            </p>
+            <p>
+              Take a stroll through our digital garden, and let the serenity of
+              Emma's Flowers envelop your senses. Explore the diversity of our
+              offerings, get to know the heart behind our blooms, and find your
+              perfect floral companion. Thank you for choosing Emma's Flowers to
+              be a part of your floral journey. Our doors are always open, and
+              we look forward to sharing the enchantment of nature with you.
+            </p>
+          </div>
+          <div class="gallery">
+            <div class="selection" id="gallerySelection">
+              <button onclick="changeGalleryImage(0)" id="g0" class="selected">
+                <img src="./images/g0.jpg" alt="Video of flowers" />
+              </button>
+              <button onclick="changeGalleryImage(1)" id="g1">
+                <img
+                  src="./images/g1.jpg"
+                  alt="Photo from the outside of the entrance"
+                />
+              </button>
+              <button onclick="changeGalleryImage(2)" id="g2">
+                <img
+                  src="./images/g2.jpg"
+                  alt="Photo of the front desk and bouquets"
+                />
+              </button>
+              <button onclick="changeGalleryImage(3)" id="g3">
+                <img
+                  src="./images/g3.jpg"
+                  alt="Photo of the display of plants"
+                />
+              </button>
+              <button onclick="changeGalleryImage(4)" id="g4">
+                <img
+                  src="./images/g4.jpg"
+                  alt="Photo of roses and other flowers"
+                />
+              </button>
+            </div>
+            <div class="display" id="display">
+              <video autoplay muted loop controls title="Video of flowers">
+                <source src="videos/video.mp4" />
+              </video>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <div class="footerWrapper">
+      <footer class="contentWrapper">
+        <div class="footerNav">
+          <a href="./index.html" class="footerName">Emma's Flowers</a>
+          <div class="footerLinks">
+            <a href="./index.html">Home</a>
+            <a href="./assortment.html">Assortment</a>
+            <a href="./about.html">About us</a>
+            <a href="./contact.html">Contact</a>
+          </div>
+        </div>
+        <div class="footerInfo">
+          <div class="footerSplit">
+            <div class="footerTimes">
+              <span>Monday - Friday: 9:00 AM - 6:00 PM</span>
+              <span>Saturday: 10:00AM - 4:00 PM</span>
+              <span>Sunday: Closed</span>
+            </div>
+            <div class="footerContact">
+              <a href="tel:+442012345678">+44 (0)20 1234 5678</a>
+              <a href="mailto:hello@emmasflowers.co.uk"
+                >hello@emmasflowers.co.uk</a
+              >
+            </div>
+          </div>
+          <div class="footerAddress">
+            <span>123 Floral Street</span>
+            <span>Covent Garden</span>
+            <span>London, WC2E 9XY</span>
+            <span>United Kingdom</span>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

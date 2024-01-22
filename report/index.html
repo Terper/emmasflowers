@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Emma's Flower | Rapport</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <h1>Webbrapport</h1>
+    <p>För "Emma's Flowers"<br />Av Jann Tötterman</p>
+    <h2>Bakgrund</h2>
+    <p>
+      I början av projektet så visste jag inte vad jag skulle ha för någon
+      "kund". Jag frågade chatGPT och fick ett svar för en blombutik som
+      specialliserar sig i att lägga ihop buketter. Det skulle även vara en bra
+      grund att sedan i framtiden använda för mer advancerad webbsida men en cms
+      och ett butiksystem.
+    </p>
+    <h2>Specifikation</h2>
+    <p>
+      Jag började med att skriva en specifikation för vad som kraven skulle
+      kunna vara för en person som har en befintilig butik och vill ha en helt
+      egen plats att informera om sin butik och vad den har att erbjuda.
+    </p>
+    <p>
+      Det var ganska svårt att kunna specificera sakerna för att begränsa sidan.
+      Så som att det inte skulle finnas en webbutik och vad anledningen till det
+      skulle vara. Även hur överlämningen och betalningen skulle gå till.
+    </p>
+    <p>
+      <a href="./specifikation.pdf" target="_blank"
+        >Specifikationen kan ses här.</a
+      >
+    </p>
+    <h2>Design</h2>
+    <p>
+      Efter att jag hade en specifikation jag var nöjd med började jag skissa på
+      <a href="https://www.figma.com" target="_blank">Figma</a> hur hemsidan
+      skulle se ut. Det funkade bra för att vara första gången jag använde
+      Figma, annars har jag alltid använt Adobe XD. Det här gången hade jag dock
+      just ominstallerat min dator och hade inte det nerladdad. Jag glömde dock
+      att göra en skiss på mobilversionen. Det var några platser som jag inte
+      kom på hur jag kunde fylla ut, jag valde att lämna dem tomma för att kunna
+      fylla i dem senare. Bilden på huvudsian lät jag AI genereras och i
+      galleriet hade jag tagit bilder från
+      <a href="https://unsplash.com/" target="_blank">Unsplash</a>. Jag var inte
+      nöjd med bilden för huvusidan så jag hade tänkt att byta ut den senare.
+    </p>
+    <p>
+      Jag skapade en färgpallet på
+      <a href="http://coolors.co" target="_blank">coolors.co</a> som följde hur
+      stilen skulle vara på hemsidan. Jag hade dock svårt att få plats med alla
+      färger på webbsidan då den blev så simpel och behövde bara en huvudfärg.
+      Enligt specifikationen så skulle det vara mjuka pastelltoner men de jag
+      valde blev för ljusa för att se på en vit bakgrund.
+    </p>
+    <p>
+      Jag hittade 3 olika fonter som passade bra till stilen på
+      <a href="https://fonts.google.com/" target="_blank">Google Fonts</a>. En
+      för "logon" som blev Dancing Script, en för rubriker som blev Montserrat
+      och en för brödtext som blev Inter. Den för logon kände jag att var
+      väldigt "elegant" och skulle passa bra till butiken.
+    </p>
+    <p>
+      <a
+        href="https://www.figma.com/file/bcfK1IEuxFLXLKeq6Ds92p/Untitled?type=design&node-id=0%3A1&mode=design&t=uck2MH0YM8V8A1If-1"
+        target="_blank"
+        >Skissen kan ses här.</a
+      >
+    </p>
+    <h2>Utveckling</h2>
+    <p>
+      Jag gjorde sidorna först genom att skriva in HTML strukturen och sedan
+      ändra stilen. Den första sidan tog längst tid då det var då jag även
+      lagade sidhuvudet och sidfoten. Websidan var från grunden uppbygd först
+      med fokus på mobilversionen, jag behövde improvisera mycket då jag inte
+      hade gjort en skiss på hur det skulle se ut. Främst använde jag mig av
+      Flexbox för att göra den responsiv, då jag tycker att det är lättast att
+      få det som jag vill med det. I 3 fall behövde jag dock använda grid
+      Flexbox inte hade den funktionen jag var ute efter. Alla gånger hade det
+      med bilder att göra, då man vet vilken storlek alla bilder har är det
+      lättare att använda grid.
+    </p>
+    <p>
+      Sidhuvudet har "logan" och menyn för att navigera alla sidor. På telefoner
+      så blir menyn en hamburgarmeny som öppnas över hela skärmen. Iconerna för
+      hamburgarmenyns knapp för att öppna och stänga skapade jag också i Figma.
+    </p>
+    <p>
+      Jag skapade ett galleri med JavaScript då det gav mig också möjlighet att
+      använda "alt" taggar i den "stora" bilden. Med koden jag hade skrivit blev
+      det också bäldigt lätta att lägga in ett videoklipp i galleriet. villa.
+      Det gav mig också möjlighet att lätt lägga till ett videoklipp i
+      galleriet.
+    </p>
+    <p>
+      I kontaktsidan la jag in en inbäddad karta, det blev väldigt klurigt att
+      få utsendet responsivt. Jag försökte mitt bästa men är inte helt nöjd hur
+      det blev till slutet. Det är inte tillräckligt responsivt för mig.
+    </p>
+    <h2>Validering</h2>
+    <p>
+      Enligt
+      <a
+        href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fpeople.arcada.fi%2F~totterja%2Femmasflowers%2Findex.html"
+        target="_blank"
+        >w3.org</a
+      >
+      html validator är det ända "problemet" att det finns "trailing slashes" i
+      länkarna och bilder. Det är dock inget som påverkar sidan. Jag har under
+      utvecklingen använt
+      <a href="http://https://prettier.io/" target="_blank">prettier.io</a> och
+      enligt den kod formatteraren så är allt korrekt.
+    </p>
+    <p>
+      Jag har även använt
+      <a
+        href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fpeople.arcada.fi%2F%7Etotterja%2Femmasflowers%2Findex.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en"
+        target="_blank"
+        >w3.org</a
+      >
+      för att validera CSS koden, inget fel hittades.
+    </p>
+    <h2>Reflektion</h2>
+    <p>
+      Jag var väldigt nöjd över ur sidhuvudet och sidfoten blev. Båda är gjorda
+      med Flexbox på, enligt mig, ett väldigt snyggt sätt. Jag är också nöjd
+      över funktionerna jag skapade i JavaScript för hamburgarmenyn och
+      galleriet. Jag är dock inte nöjd över hur kontaktsidans karta blev, att
+      hålla på med iFrames är inte något jag tycker om, men det betyder bara att
+      jag behöver öva på hur jag hanterar de.
+    </p>
+  </body>
+</html>
